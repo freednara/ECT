@@ -150,7 +150,6 @@
         <members>ECT_NARA_Supervisory_User</members>
         <members>ECT_OFR_Legal_User</members>
         <members>ECT_State_User</members>
-        <members>Registration_Assistant</members>
         <name>CustomPermission</name>
     </types>
     <types>
