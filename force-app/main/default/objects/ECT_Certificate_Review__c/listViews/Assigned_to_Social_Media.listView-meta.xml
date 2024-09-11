@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Assigned_to_Social_Media</fullName>
+    <columns>NAME</columns>
+    <columns>Contact_s_State__c</columns>
+    <columns>Certificate_Type__c</columns>
+    <columns>Status__c</columns>
+    <columns>Assigned_To__c</columns>
+    <columns>Date_Received__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Status__c</field>
+        <operation>equals</operation>
+        <value>Social Media</value>
+    </filters>
+    <filters>
+        <field>SM_Date_Posted__c</field>
+        <operation>equals</operation>
+    </filters>
+    <label>Assigned to Social Media</label>
+    <sharedTo>
+        <group>ECT_NARA_Social_Media_Users</group>
+    </sharedTo>
+</ListView>

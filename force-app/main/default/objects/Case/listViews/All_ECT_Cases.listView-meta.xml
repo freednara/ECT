@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_ECT_Cases</fullName>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>NAME</columns>
+    <columns>CASES.SUBJECT</columns>
+    <columns>CASES.STATUS</columns>
+    <columns>CASES.PRIORITY</columns>
+    <columns>CASES.RECORDTYPE</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>CASES.CREATED_DATE</columns>
+    <columns>ECT_Contact_State__c</columns>
+    <columns>ECT_Assigned_To__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CASES.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Case.ECT_Inquiry</value>
+    </filters>
+    <label>All ECT Cases</label>
+    <sharedTo>
+        <group>ECT_Congress_Users</group>
+        <group>ECT_NARA_Super_Users</group>
+        <group>ECT_OFR_Legal_Users</group>
+        <group>ECT_State_Users</group>
+    </sharedTo>
+</ListView>

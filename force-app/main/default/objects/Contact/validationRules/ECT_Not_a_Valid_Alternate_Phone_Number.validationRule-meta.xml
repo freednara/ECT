@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ECT_Not_a_Valid_Alternate_Phone_Number</fullName>
+    <active>true</active>
+    <errorConditionFormula>NOT(ISBLANK(ECT_Alternate_Phone_Number__c))
+&amp;&amp;
+NOT(
+    OR(
+        REGEX(ECT_Alternate_Phone_Number__c, &quot;(\\d{3}[-.\\s]?\\d{3}[-.\\s]?\\d{4})&quot;),
+        REGEX(ECT_Alternate_Phone_Number__c, &quot;(\\d{10})&quot;),  
+
+        REGEX(ECT_Alternate_Phone_Number__c, &quot;(\\(\\d{3}\\)\\s?\\d{3}-\\d{4})&quot;)
+    )
+)</errorConditionFormula>
+    <errorDisplayField>ECT_Alternate_Phone_Number__c</errorDisplayField>
+    <errorMessage>Not a Valid Alternate Phone Number</errorMessage>
+</ValidationRule>

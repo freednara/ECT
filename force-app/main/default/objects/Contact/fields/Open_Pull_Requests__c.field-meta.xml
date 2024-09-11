@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Open_Pull_Requests__c</fullName>
+    <label>Open Pull Requests</label>
+    <summaryFilterItems>
+        <field>PULLDB_Pull__c.PullDB_Status__c</field>
+        <operation>equals</operation>
+        <value>Pull Completed</value>
+    </summaryFilterItems>
+    <summaryForeignKey>PULLDB_Pull__c.Contact_Name__c</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

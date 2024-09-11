@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>COV_S_T__c</fullName>
+    <inlineHelpText>Certificate of Vote Shipping &amp; Tracking</inlineHelpText>
+    <label>COV S&amp;T</label>
+    <summaryFilterItems>
+        <field>ECT_Shipping_Tracking_Information__c.Certificate_Type__c</field>
+        <operation>equals</operation>
+        <value>Certificate of Vote</value>
+    </summaryFilterItems>
+    <summaryFilterItems>
+        <field>ECT_Shipping_Tracking_Information__c.Status__c</field>
+        <operation>equals</operation>
+        <value>Pending</value>
+    </summaryFilterItems>
+    <summaryForeignKey>ECT_Shipping_Tracking_Information__c.State__c</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

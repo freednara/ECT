@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Check_Email_Opt_Out</fullName>
+    <active>true</active>
+    <description>Check the Email Opt Out before saving record</description>
+    <errorConditionFormula>AND
+(
+HasOptedOutOfEmail = False,
+RecordType.Name = &apos;Researcher Contact&apos;,
+(ISPICKVAL(  RRS_Status__c ,&quot;Active&quot;))
+)</errorConditionFormula>
+    <errorDisplayField>HasOptedOutOfEmail</errorDisplayField>
+    <errorMessage>Please ensure that the check box is checked</errorMessage>
+</ValidationRule>

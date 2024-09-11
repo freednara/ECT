@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ECT_Not_a_Valid_Website</fullName>
+    <active>false</active>
+    <errorConditionFormula>NOT( ISBLANK(ECT_CEO_Website__c) ) 
+&amp;&amp;
+if(REGEX( ECT_CEO_Website__c ,&quot;^((http|https)://)??(www[.])??([a-zA-Z0-9]|-)+?([.][a-zA-Z0-9(-|/|=|?)??]+?)+?$&quot;),false,true)</errorConditionFormula>
+    <errorDisplayField>ECT_CEO_Website__c</errorDisplayField>
+    <errorMessage>Not a Valid CEO Website</errorMessage>
+</ValidationRule>

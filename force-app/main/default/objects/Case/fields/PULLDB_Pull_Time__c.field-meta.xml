@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PULLDB_Pull_Time__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <label>Pull Time</label>
+    <lookupFilter>
+        <active>true</active>
+        <filterItems>
+            <field>PULLDB_Pull_Time__c.Access_Location__c</field>
+            <operation>equals</operation>
+            <valueField>$Source.PULLDB_Location__c</valueField>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>PULLDB_Pull_Time__c</referenceTo>
+    <relationshipLabel>Inquiries</relationshipLabel>
+    <relationshipName>Cases</relationshipName>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

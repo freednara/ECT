@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RRS_Expected_Result_of_Research__c</fullName>
+    <label>Expected Result of Research</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Family History</fullName>
+                <default>false</default>
+                <label>Family History</label>
+            </value>
+            <value>
+                <fullName>Course Paper</fullName>
+                <default>false</default>
+                <label>Course Paper</label>
+            </value>
+            <value>
+                <fullName>Senior or Masters Thesis</fullName>
+                <default>false</default>
+                <label>Senior or Masters Thesis</label>
+            </value>
+            <value>
+                <fullName>PhD Dissertation</fullName>
+                <default>false</default>
+                <label>PhD Dissertation</label>
+            </value>
+            <value>
+                <fullName>Article</fullName>
+                <default>false</default>
+                <label>Article</label>
+            </value>
+            <value>
+                <fullName>Book</fullName>
+                <default>false</default>
+                <label>Book</label>
+            </value>
+            <value>
+                <fullName>Film/TV</fullName>
+                <default>false</default>
+                <label>Film/TV</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

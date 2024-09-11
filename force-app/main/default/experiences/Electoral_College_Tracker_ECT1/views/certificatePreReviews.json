@@ -1,0 +1,123 @@
+{
+  "appPageId" : "e6613a67-a332-4738-898e-c87d4d82ac01",
+  "componentName" : "siteforce:dynamicLayout",
+  "dataProviders" : [ ],
+  "id" : "a7086b02-0fb1-4630-a537-992279793724",
+  "label" : "Certificate Pre-Reviews",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "background" : "background: rgba(0,0,0,0)",
+        "backgroundOverlay" : "rgba(0,0,0,0.5)",
+        "contentAreaWidth" : 100,
+        "sectionConfig" : {
+          "UUID" : "6896113a-86bf-48f8-95b2-04b8a472bd8b",
+          "columns" : [ {
+            "UUID" : "49a41ac3-3b5e-417c-8e41-590462aaab6a",
+            "columnKey" : "1",
+            "columnName" : "Column 1",
+            "columnWidth" : "12",
+            "seedComponents" : [ ]
+          } ]
+        },
+        "sectionHeight" : 300
+      },
+      "componentName" : "forceCommunity:section",
+      "id" : "6896113a-86bf-48f8-95b2-04b8a472bd8b",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "flowArguments" : "",
+            "flowName" : "{!flowName}"
+          },
+          "componentName" : "forceCommunity:flowCommunity",
+          "id" : "47e695b8-357a-4567-ac7d-f61cda7136c8",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "49a41ac3-3b5e-417c-8e41-590462aaab6a",
+        "regionLabel" : "Column 1",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "background" : "background: rgba(0,0,0,0)",
+        "backgroundOverlay" : "rgba(0,0,0,0.5)",
+        "contentAreaWidth" : 100,
+        "sectionConfig" : {
+          "UUID" : "c541d6e3-2d75-4c2b-ae63-cd666b29f859",
+          "columns" : [ {
+            "UUID" : "7c00a9d9-73bd-4dbe-ae30-27a310e1a165",
+            "columnKey" : "1",
+            "columnName" : "Column 1",
+            "columnWidth" : "12",
+            "seedComponents" : [ ]
+          } ]
+        },
+        "sectionHeight" : 300
+      },
+      "componentName" : "forceCommunity:section",
+      "id" : "c541d6e3-2d75-4c2b-ae63-cd666b29f859",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "enableInlineEdit" : false,
+            "filterName" : "State_Certificate_Pre_Reviews",
+            "layout" : "STANDARD",
+            "pageSize" : 25,
+            "scope" : "ECT_Certificate_Pre_Review__c",
+            "showActionBar" : true,
+            "showChartsPanel" : true,
+            "showDisplay" : "grid",
+            "showFilterPanel" : false,
+            "showImageIcon" : true,
+            "showManualRefreshButton" : true,
+            "showObjectName" : true,
+            "showPinnedList" : false,
+            "showSearchBar" : true
+          },
+          "componentName" : "forceCommunity:objectHome",
+          "id" : "7fa3cdc6-c02b-4c70-a125-3bd03fa91c15",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "7c00a9d9-73bd-4dbe-ae30-27a310e1a165",
+        "regionLabel" : "Column 1",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "4061145f-0151-4248-993c-dc3842a2f122",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Certificate Pre-Reviews"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "0f944f34-f10a-46e3-938c-7e0fb4d99596",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "978868a6-0b8e-4bfe-a1f6-6b0dad6c27db",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "custom-certificate-pre-reviews"
+}

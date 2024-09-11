@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ECT_Role__c</fullName>
+    <label>Role</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>CEO POC</fullName>
+                <default>false</default>
+                <label>CEO POC</label>
+            </value>
+            <value>
+                <fullName>Chief Executive Officer (CEO)</fullName>
+                <default>false</default>
+                <label>Chief Executive Officer (CEO)</label>
+            </value>
+            <value>
+                <fullName>Congress</fullName>
+                <default>false</default>
+                <label>Congress</label>
+            </value>
+            <value>
+                <fullName>Electoral College Alternate POC</fullName>
+                <default>false</default>
+                <label>Electoral College Alternate POC</label>
+            </value>
+            <value>
+                <fullName>Electoral College Primary POC</fullName>
+                <default>false</default>
+                <label>Electoral College Primary POC</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

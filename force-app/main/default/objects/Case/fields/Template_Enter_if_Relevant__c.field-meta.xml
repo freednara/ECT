@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Template_Enter_if_Relevant__c</fullName>
+    <label>Template No.</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Not Applicable</fullName>
+                <default>false</default>
+                <label>Not Applicable</label>
+            </value>
+            <value>
+                <fullName>02 Misdirect</fullName>
+                <default>false</default>
+                <label>02 Misdirect</label>
+            </value>
+            <value>
+                <fullName>03 Needs Documents</fullName>
+                <default>false</default>
+                <label>03 Needs Documents</label>
+            </value>
+            <value>
+                <fullName>06 Exemption 3-EEOC</fullName>
+                <default>false</default>
+                <label>06 Exemption 3-EEOC</label>
+            </value>
+            <value>
+                <fullName>07 Exemption 3 - Grand Jury</fullName>
+                <default>false</default>
+                <label>07 Exemption 3 - Grand Jury</label>
+            </value>
+            <value>
+                <fullName>08 Exemption 7A</fullName>
+                <default>false</default>
+                <label>08 Exemption 7A</label>
+            </value>
+            <value>
+                <fullName>09 Exemption 1 and 3 CIA</fullName>
+                <default>false</default>
+                <label>09 Exemption 1 and 3 CIA</label>
+            </value>
+            <value>
+                <fullName>10 Exemption 6 and 7C</fullName>
+                <default>false</default>
+                <label>10 Exemption 6 and 7C</label>
+            </value>
+            <value>
+                <fullName>12 FBI Search</fullName>
+                <default>false</default>
+                <label>12 FBI Search</label>
+            </value>
+            <value>
+                <fullName>13 Search/No Records</fullName>
+                <default>false</default>
+                <label>13 Search/No Records</label>
+            </value>
+            <value>
+                <fullName>15 Status Letter</fullName>
+                <default>false</default>
+                <label>15 Status Letter</label>
+            </value>
+            <value>
+                <fullName>16 Glomar 6 and 7C</fullName>
+                <default>false</default>
+                <label>16 Glomar 6 and 7C</label>
+            </value>
+            <value>
+                <fullName>17 Need to Appeal</fullName>
+                <default>false</default>
+                <label>17 Need to Appeal</label>
+            </value>
+            <value>
+                <fullName>18 Constructive Denial</fullName>
+                <default>false</default>
+                <label>18 Constructive Denial</label>
+            </value>
+            <value>
+                <fullName>19 OGIS Will On Respond to FOIA Related Correspondence</fullName>
+                <default>false</default>
+                <label>19 OGIS Will On Respond to FOIA Related Correspondence</label>
+            </value>
+            <value>
+                <fullName>20 Agency Declines to Provide EDC</fullName>
+                <default>false</default>
+                <label>20 Agency Declines to Provide EDC</label>
+            </value>
+            <value>
+                <fullName>21 IRS Tax Info FOIA Request</fullName>
+                <default>false</default>
+                <label>21 IRS Tax Info FOIA Request</label>
+            </value>
+            <value>
+                <fullName>22 Status - Contact FPL</fullName>
+                <default>false</default>
+                <label>22 Status - Contact FPL</label>
+            </value>
+            <value>
+                <fullName>25 No Appeal Filed</fullName>
+                <default>false</default>
+                <label>25 No Appeal Filed</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

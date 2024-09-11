@@ -1,0 +1,12 @@
+{
+  "activeViewId" : "6a2ca21d-c56b-4a8e-95ba-b9b2d61f1cce",
+  "appPageId" : "e6613a67-a332-4738-898e-c87d4d82ac01",
+  "configurationTags" : [ ],
+  "devName" : "Certificate_Review_Related_List__c",
+  "id" : "03e73de3-fe3e-42a3-8428-7082b1f2641e",
+  "label" : "Certificate Review Related List",
+  "objectApiName" : "ECT_Certificate_Review__c",
+  "routeType" : "relatedlist-a2w",
+  "type" : "route",
+  "urlPrefix" : "ect-certificate-review"
+}

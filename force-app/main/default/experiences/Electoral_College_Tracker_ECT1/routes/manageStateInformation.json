@@ -1,0 +1,12 @@
+{
+  "activeViewId" : "7e496769-2c23-4719-bbf7-b2d8b8f320df",
+  "appPageId" : "e6613a67-a332-4738-898e-c87d4d82ac01",
+  "configurationTags" : [ ],
+  "devName" : "Manage_State_Information__c",
+  "id" : "ed50326e-a83c-4ea2-9887-8ae10266aa5c",
+  "label" : "Manage State Information",
+  "pageAccess" : "UseParent",
+  "routeType" : "custom-manage-state-information",
+  "type" : "route",
+  "urlPrefix" : "manage-state-information"
+}

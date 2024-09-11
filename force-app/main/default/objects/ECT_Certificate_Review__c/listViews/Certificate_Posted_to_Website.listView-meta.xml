@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Certificate_Posted_to_Website</fullName>
+    <columns>NAME</columns>
+    <columns>Contact_s_State__c</columns>
+    <columns>Certificate_Type__c</columns>
+    <columns>Date_Received__c</columns>
+    <columns>WU_Date_Posted__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>WU_Date_Posted__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <label>Certificate Posted to Website</label>
+    <sharedTo>
+        <group>ECT_Congress_Users</group>
+        <group>ECT_NARA_Supervisory_Users</group>
+    </sharedTo>
+</ListView>

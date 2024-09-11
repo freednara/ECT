@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>ECT Case Support</name>
+    <queueMembers>
+        <publicGroups>
+            <publicGroup>ECT_NARA_Super_Users</publicGroup>
+            <publicGroup>ECT_OFR_Legal_Users</publicGroup>
+        </publicGroups>
+        <users>
+            <user>frank.reed@nara.gov</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

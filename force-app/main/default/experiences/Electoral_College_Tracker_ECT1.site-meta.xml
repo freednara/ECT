@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ExperienceBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Electoral College Tracker (ECT)</label>
+    <type>ChatterNetworkPicasso</type>
+    <urlPathPrefix>ECT/s</urlPathPrefix>
+</ExperienceBundle>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Researcher_Contacts</fullName>
+    <columns>FULL_NAME</columns>
+    <columns>CONTACT.LAST_NAME</columns>
+    <columns>CONTACT.FIRST_NAME</columns>
+    <columns>RRS_Status__c</columns>
+    <columns>RRS_Access_Expiration_Date__c</columns>
+    <columns>CONTACT.CREATED_DATE</columns>
+    <columns>CONTACT.PHONE1</columns>
+    <columns>CONTACT.EMAIL</columns>
+    <columns>RRS_Contact_Type__c</columns>
+    <columns>RRS_I_Agree__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ACCOUNT.NAME</field>
+        <operation>equals</operation>
+        <value>Researcher</value>
+    </filters>
+    <filters>
+        <field>CONTACT.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Contact.Researcher_Contact</value>
+    </filters>
+    <label>Researcher Contacts</label>
+    <sharedTo>
+        <group>Registration_Assistant</group>
+        <role>PullDB</role>
+    </sharedTo>
+</ListView>

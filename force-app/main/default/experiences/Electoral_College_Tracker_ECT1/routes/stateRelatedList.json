@@ -1,0 +1,12 @@
+{
+  "activeViewId" : "dc089b43-da8e-4b51-9f20-67fe9bbd24c0",
+  "appPageId" : "e6613a67-a332-4738-898e-c87d4d82ac01",
+  "configurationTags" : [ ],
+  "devName" : "State_Related_List__c",
+  "id" : "6c9c4ebf-a9f8-4424-8958-adf917cbea93",
+  "label" : "State Related List",
+  "objectApiName" : "ECT_State__c",
+  "routeType" : "relatedlist-a2o",
+  "type" : "route",
+  "urlPrefix" : "ect-state"
+}

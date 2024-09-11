@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ID_Type__c</fullName>
+    <label>ID Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Driver License</fullName>
+                <default>false</default>
+                <label>Driver License</label>
+            </value>
+            <value>
+                <fullName>Green Card / Visa</fullName>
+                <default>false</default>
+                <label>Green Card / Visa</label>
+            </value>
+            <value>
+                <fullName>Military Card (CAC)</fullName>
+                <default>false</default>
+                <label>Military Card (CAC)</label>
+            </value>
+            <value>
+                <fullName>Passport / Passport Card</fullName>
+                <default>false</default>
+                <label>Passport / Passport Card</label>
+            </value>
+            <value>
+                <fullName>School ID</fullName>
+                <default>false</default>
+                <label>School ID</label>
+            </value>
+            <value>
+                <fullName>Government ID</fullName>
+                <default>false</default>
+                <label>Government ID</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

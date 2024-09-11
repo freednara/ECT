@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RRS_I_Agree__c</fullName>
+    <defaultValue>false</defaultValue>
+    <inlineHelpText>I have read 36 CFR Part 1254 (Regulations for the public use of records in the National Archives and Records Administration) and I will comply with those regulations.</inlineHelpText>
+    <label>I Agree</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

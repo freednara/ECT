@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Signed_by_the_Governor_or_Mayor__c</fullName>
+    <defaultValue>false</defaultValue>
+    <label>Signed by the Governor or Mayor</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

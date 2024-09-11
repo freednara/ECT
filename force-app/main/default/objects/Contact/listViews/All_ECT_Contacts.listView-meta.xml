@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_ECT_Contacts</fullName>
+    <columns>FULL_NAME</columns>
+    <columns>ECT_Role__c</columns>
+    <columns>ECT_Contact_s_State__c</columns>
+    <columns>CONTACT.PHONE1</columns>
+    <columns>CONTACT.EMAIL</columns>
+    <columns>CONTACT.RECORDTYPE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CONTACT.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Contact.ECT_Contact</value>
+    </filters>
+    <label>All ECT Contacts</label>
+    <sharedTo>
+        <group>ECT_Users</group>
+    </sharedTo>
+</ListView>

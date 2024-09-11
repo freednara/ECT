@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Is_Time_Sensitive__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>To enable a Staff assistant to flag Cases that are time sensitive</description>
+    <label>Is Time Sensitive?</label>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

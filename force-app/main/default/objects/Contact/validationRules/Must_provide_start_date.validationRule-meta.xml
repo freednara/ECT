@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Must_provide_start_date</fullName>
+    <active>true</active>
+    <errorConditionFormula>IF(
+AND(
+    TEXT(RRS_Status__c) = &quot;Suspended&quot;,
+    ISBLANK(RRS_Start_Date__c)), True, False
+)</errorConditionFormula>
+    <errorDisplayField>RRS_Start_Date__c</errorDisplayField>
+    <errorMessage>Must provide a start date  if the researcher is suspended.</errorMessage>
+</ValidationRule>

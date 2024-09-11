@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_Agree</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(RRS_I_Completed_Orientation__c = False, RecordType.Name = &apos;Researcher Contact&apos;)</errorConditionFormula>
+    <errorDisplayField>RRS_I_Agree__c</errorDisplayField>
+    <errorMessage>Must Agree</errorMessage>
+</ValidationRule>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ECT_Congressional_Contacts</fullName>
+    <columns>CONTACT.FIRST_NAME</columns>
+    <columns>CONTACT.LAST_NAME</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>ECT_Role__c</columns>
+    <columns>ECT_Primary_Phone_Number__c</columns>
+    <columns>ECT_Alternate_Phone_Number__c</columns>
+    <columns>CONTACT.EMAIL</columns>
+    <columns>CONTACT.RECORDTYPE</columns>
+    <columns>ECT_Preferred_Honorific__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CONTACT.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Contact.ECT_Contact</value>
+    </filters>
+    <filters>
+        <field>ECT_Active__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>ECT_Role__c</field>
+        <operation>equals</operation>
+        <value>Congress</value>
+    </filters>
+    <label>ECT Congressional Contacts</label>
+    <sharedTo>
+        <group>ECT_Users</group>
+    </sharedTo>
+</ListView>

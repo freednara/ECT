@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Dept_or_Agency_Required_to_Close_a_case</fullName>
+    <active>false</active>
+    <errorConditionFormula>AND( RecordType.Name = &quot;OGIS&quot;,
+ISPICKVAL(Status, &quot;Closed&quot;),
+OR(
+ISNULL(Dept_or_Agency_and_Component__c)
+))</errorConditionFormula>
+    <errorMessage>Dept or Agency and Component cannot be blank before case can be closed</errorMessage>
+</ValidationRule>

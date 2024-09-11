@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>NAME</columns>
+    <columns>ECT_State__c</columns>
+    <columns>Certificate_Type__c</columns>
+    <columns>CREATEDBY_USER</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>Pre_Review_Assigned_To__c</columns>
+    <columns>Pre_Review_Start_Date__c</columns>
+    <columns>Pre_Review_End_Date__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>All</label>
+    <sharedTo>
+        <group>ECT_NARA_Super_Users</group>
+        <group>ECT_OFR_Legal_Users</group>
+    </sharedTo>
+</ListView>

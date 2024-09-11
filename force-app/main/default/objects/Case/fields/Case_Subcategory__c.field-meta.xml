@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Case_Subcategory__c</fullName>
+    <label>Case _Subcategory</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Agency Practices</fullName>
+                <default>false</default>
+                <label>Agency Practices</label>
+            </value>
+            <value>
+                <fullName>Delay</fullName>
+                <default>false</default>
+                <label>Delay</label>
+            </value>
+            <value>
+                <fullName>Exemption Application</fullName>
+                <default>false</default>
+                <label>Exemption Application</label>
+            </value>
+            <value>
+                <fullName>Expedited Processing</fullName>
+                <default>false</default>
+                <label>Expedited Processing</label>
+            </value>
+            <value>
+                <fullName>Fees</fullName>
+                <default>false</default>
+                <label>Fees</label>
+            </value>
+            <value>
+                <fullName>Misdirected Request/Appeal/Correspondence</fullName>
+                <default>false</default>
+                <label>Misdirected Request/Appeal/Correspondence</label>
+            </value>
+            <value>
+                <fullName>Need Docs</fullName>
+                <default>false</default>
+                <label>Need Docs</label>
+            </value>
+            <value>
+                <fullName>No records</fullName>
+                <default>false</default>
+                <label>No records</label>
+            </value>
+            <value>
+                <fullName>Non-FOIA</fullName>
+                <default>false</default>
+                <label>Non-FOIA</label>
+            </value>
+            <value>
+                <fullName>Scope of Request/Search Issues</fullName>
+                <default>false</default>
+                <label>Scope of Request/Search Issues</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Names_of_all_nominated_Electors__c</fullName>
+    <defaultValue>false</defaultValue>
+    <label>Names of all nominated Electors</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

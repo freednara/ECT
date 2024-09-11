@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_of_Regular_Line_Items__c</fullName>
+    <description>roll up of all reference service slips that are marked as non- special handling or regular record requests.</description>
+    <label>Total # of Regular Line Items</label>
+    <summaryFilterItems>
+        <field>PULLDB_Reference_Service_Slips__c.Screening_Required__c</field>
+        <operation>equals</operation>
+        <value>False</value>
+    </summaryFilterItems>
+    <summaryForeignKey>PULLDB_Reference_Service_Slips__c.Case__c</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>End_date_must_be_greater_than_start_date</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+    OR(
+        ISNEW(),
+        ISCHANGED(RRS_End_Date__c)
+    ),
+    RRS_End_Date__c &lt; RRS_Start_Date__c
+)</errorConditionFormula>
+    <errorMessage>Start date cannot be greater than the end date.</errorMessage>
+</ValidationRule>

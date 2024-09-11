@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ETMS_Customer_Category__c</fullName>
+    <description>Captures the Customer Category for a controlled action</description>
+    <label>Customer Category</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>White House</fullName>
+                <default>false</default>
+                <label>White House</label>
+            </value>
+            <value>
+                <fullName>Congress</fullName>
+                <default>false</default>
+                <label>Congress</label>
+            </value>
+            <value>
+                <fullName>Other Federal Agency</fullName>
+                <default>false</default>
+                <label>Other Federal Agency</label>
+            </value>
+            <value>
+                <fullName>State or Local Government</fullName>
+                <default>false</default>
+                <label>State or Local Government</label>
+            </value>
+            <value>
+                <fullName>General Public/Private Citizen (direct/non-referral)</fullName>
+                <default>false</default>
+                <label>General Public/Private Citizen (direct/non-referral)</label>
+            </value>
+            <value>
+                <fullName>Stakeholder Groups</fullName>
+                <default>false</default>
+                <label>Stakeholder Groups</label>
+            </value>
+            <value>
+                <fullName>Private Sector/Industry</fullName>
+                <default>false</default>
+                <label>Private Sector/Industry</label>
+            </value>
+            <value>
+                <fullName>International</fullName>
+                <default>false</default>
+                <label>International</label>
+            </value>
+            <value>
+                <fullName>Internal</fullName>
+                <default>false</default>
+                <label>Internal</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

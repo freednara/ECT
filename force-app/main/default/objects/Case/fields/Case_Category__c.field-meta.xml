@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Case_Category__c</fullName>
+    <label>Case Category</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Compliance Issue</fullName>
+                <default>false</default>
+                <label>Compliance Issue</label>
+            </value>
+            <value>
+                <fullName>Dispute Resolution</fullName>
+                <default>false</default>
+                <label>Dispute Resolution</label>
+            </value>
+            <value>
+                <fullName>General OGIS Assistance</fullName>
+                <default>false</default>
+                <label>General OGIS Assistance</label>
+            </value>
+            <value>
+                <fullName>FOIA Process Assistance</fullName>
+                <default>false</default>
+                <label>FOIA Process Assistance</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

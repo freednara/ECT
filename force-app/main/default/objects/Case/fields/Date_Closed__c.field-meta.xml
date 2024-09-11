@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Date_Closed__c</fullName>
+    <formula>IF(RecordType.Name = &quot;OGIS&quot;,
+IF(weekday(Datevalue(ClosedDate)) = 1,ClosedDate + 1,
+IF(weekday(Datevalue(ClosedDate)) = 7,ClosedDate + 2,
+IF(Weekday(Datevalue(Holiday_Date_Closed__c)) = 2,Holiday_Date_Closed__c + 1,
+IF(Weekday(Datevalue(Holiday_Date_Closed__c)) = 3,Holiday_Date_Closed__c + 1,
+IF(Weekday(Datevalue(Holiday_Date_Closed__c)) = 4,Holiday_Date_Closed__c + 1,
+IF(Weekday(Datevalue(Holiday_Date_Closed__c)) = 5,Holiday_Date_Closed__c + 1,
+IF(Weekday(Datevalue(Holiday_Date_Closed__c)) = 6,Holiday_Date_Closed__c + 3,
+ClosedDate
+))))))),datetimevalue(&quot;&quot;))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Date Closed</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

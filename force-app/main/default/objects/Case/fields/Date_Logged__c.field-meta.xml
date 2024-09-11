@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Date_Logged__c</fullName>
+    <formula>IF(RecordType.Name = &quot;OGIS&quot;,
+IF(weekday(Datevalue(CreatedDate)) = 1,datevalue(CreatedDate + 1),
+IF(weekday(Datevalue(CreatedDate)) = 7,datevalue(CreatedDate + 2),
+IF(Weekday(Datevalue(HolidayDateHolder__c)) = 2,datevalue(HolidayDateHolder__c + 1),
+IF(Weekday(Datevalue(HolidayDateHolder__c)) = 3,datevalue(HolidayDateHolder__c + 1),
+IF(Weekday(Datevalue(HolidayDateHolder__c)) = 4,datevalue(HolidayDateHolder__c + 1),
+IF(Weekday(Datevalue(HolidayDateHolder__c)) = 5,datevalue(HolidayDateHolder__c + 1),
+IF(Weekday(Datevalue(HolidayDateHolder__c)) = 6,datevalue(HolidayDateHolder__c + 3),
+datevalue(CreatedDate)
+))))))),datevalue(&quot;&quot;))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Date Logged</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

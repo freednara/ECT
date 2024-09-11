@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Notify_FL_of_new_comment_from_State_POC</name>
+        <label>Notify FL of new comment from State POC</label>
+        <locationX>314</locationX>
+        <locationY>431</locationY>
+        <actionName>ECT_Certificate_Pre_Review__c.ECT_Email_notification_to_FL_when_State_POC_updates_pre_review_entry</actionName>
+        <actionType>emailAlert</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>ECT_Certificate_Pre_Review__c.ECT_Email_notification_to_FL_when_State_POC_updates_pre_review_entry</nameSegment>
+        <versionSegment>1</versionSegment>
+    </actionCalls>
+    <actionCalls>
+        <name>Notify_State_POC_of_comment_from_FL</name>
+        <label>Notify State POC of comment from FL</label>
+        <locationX>50</locationX>
+        <locationY>431</locationY>
+        <actionName>ECT_Certificate_Pre_Review__c.ECT_Email_notification_to_State_POC_when_FL_updates_pre_review_entry</actionName>
+        <actionType>emailAlert</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>ECT_Certificate_Pre_Review__c.ECT_Email_notification_to_State_POC_when_FL_updates_pre_review_entry</nameSegment>
+        <versionSegment>1</versionSegment>
+    </actionCalls>
+    <apiVersion>59.0</apiVersion>
+    <decisions>
+        <name>Update_to_FL_Comment_or_POC_Comment</name>
+        <label>Update to FL Comment or POC Comment?</label>
+        <locationX>314</locationX>
+        <locationY>323</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Update_to_FL_Comment</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.FL_Pre_Review_Comments__c</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Notify_State_POC_of_comment_from_FL</targetReference>
+            </connector>
+            <label>Update to FL Comment</label>
+        </rules>
+        <rules>
+            <name>Update_to_POC_Comment</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.State_POC_Comment__c</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Notify_FL_of_new_comment_from_State_POC</targetReference>
+            </connector>
+            <label>Update to POC Comment</label>
+        </rules>
+    </decisions>
+    <description>Email notification to FL/State POC for comments on pre-review entry</description>
+    <environments>Default</environments>
+    <interviewLabel>ECT: Email notification to FL/State POC for comments on pre-review entry {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>ECT: Email notification to FL/State POC for comments on pre-review entry</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>188</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Update_to_FL_Comment_or_POC_Comment</targetReference>
+        </connector>
+        <object>ECT_Certificate_Pre_Review__c</object>
+        <recordTriggerType>Update</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

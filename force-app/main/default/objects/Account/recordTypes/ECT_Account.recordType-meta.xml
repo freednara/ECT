@@ -1,0 +1,748 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ECT_Account</fullName>
+    <active>true</active>
+    <description>Account to hold state information for the Electoral College</description>
+    <label>ECT Account</label>
+    <picklistValues>
+        <picklist>AccountSource</picklist>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partner Referral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Phone Inquiry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Purchased List</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Web</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ETMS_Customer_Category__c</picklist>
+        <values>
+            <fullName>Congress</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>General Public%2FPrivate Citizen %28direct%2Fnon-referral%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Internal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>International</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other Federal Agency</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Private Sector%2FIndustry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Stakeholder Groups</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>State or Local Government</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>White House</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ETMS_Customer_Sub_Category__c</picklist>
+        <values>
+            <fullName>A- Agency Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AC- Office of the Chief Records Officer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AF- Federal Records Center Program</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AFC- Customer Relationship Management Branch</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AFN- National Personnel Records Center</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AFO- Operations Branch</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AFOD- Operations DC WNRC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AFOE- Operations East</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AFOW- Operations West</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AISOO- Information Security Oversight Office</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ANDC- National Declassification Center</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AOGIS- Office of Government Information Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Academia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>B- Business Support Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BF- Facility and Property Management Division</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BQ- Field Management Support Division</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BR- Real Property Planning</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BX- Security Management Division</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C- Office of the Chief Operating Officer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CA- Accountability Staff</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CH- Holdings Protection and Recovery Staff</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CM- Corporate Records Management Staff</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Central Intelligence Agency %28CIA%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Citizen Referral %28Agency Liaison%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Commission on Civil Rights</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Congressional Staff</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Constituent Referral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Department of Agriculture %28USDA%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Department of Commerce %28DOC%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Department of Defense %28DoD%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Department of Education %28ED%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Department of Energy %28DOE%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Department of Health and Human Services %28HHS%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Department of Homeland Security %28DHS%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Department of Housing and Urban Development %28HUD%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Department of Justice %28DOJ%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Department of Labor %28DOL%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Department of State %28DOS%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Department of Transportation %28DOT%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Department of Veterans Affairs %28VA%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Department of the Interior %28DOI%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Department of the Treasury %28TREAS%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Equal Employment Opportunity Commission %28EEOC%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Executive Office of the President %28EOP%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>F- Office of the Federal Register</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FD- Development Digital Strategy and Analytics Division</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FL- Legal Affairs and Policy Division</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FP- Publications and Services Division</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Federal Labor Relations Authority %28FLRA%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Federal Mediation and Conciliation Service %28FMC%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Foundation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>General Services Administration %28GSA%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Government</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Government Accountability Office %28GAO%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>H- Office of Human Capital</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>I- Information Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>I-C- Policy %26 Compliance Management Staff</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>I-I- Investment Planning %26 Management Staff</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IA- Architecture %26 Technology Management Division</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ID- Development %26 Tools Management Division</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IO- Operations Management Division</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IP- Portfolio Management Division</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IQ- Quality Management Division</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IS- IT Security Management Division</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Institute of Museum and Library Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>L- Legislative Archives Presidential Libraries and Museum Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LE- Education and Public Programs Division</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LL- Center for Legislative Archives</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LM- Presidential Materials Division</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LP- Office of Presidential Libraries</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LX- Exhibits Division</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Library of Congress</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>M- Office of the Chief of Management and Administration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MP- Strategy and Performance Division</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Member of Congress %28non-oversight%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Member of Congress %28oversight committee%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Merit Systems Protection Board %28MSPB%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Multiple Offices</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>N- Office of the Archivist of the United States</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NCON- Congressional Affairs Staff</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ND- Office of the Deputy Archivist of the United States</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NEEO- Equal Employment Opportunity Office</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NGC- General Counsel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NHPRC- National Historical Publications and Records Commission</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>National Capital Planning Commission</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>National Constitution Center</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>National Endowment for the Arts</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>National Security Council %28NSC%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non-Government</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non-Profit or NGO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OIG- Office of the Inspector General</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Occupational Safety and Health Review Commission %28OSHA%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Office of Government Ethics %28OGE%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Office of Management and Budget %28OMB%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Office of Personnel Management %28OPM%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Office of Special Counsel %28OSC%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Office of the Director of National Intelligence %28ODNI%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other or Not Listed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other%2FNot listed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>POTUS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Professional Association</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>R- Research Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>R-B- Backlog Reduction</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RC- Research Customer Support Division</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RD- Access Coordinator - Washington DC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RE- Access Coordinator - East</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RL- Access Coordinator - St%2E Louis</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RM- Access Coordinator- Midwest</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RP- Project and Performance Management</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RW- Access Coordinator- West</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RX- Preservation Program Division</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>S- Office of the Chief of Staff</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SC- Communications and Marketing Division</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SE- Executive Secretariat</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ST-Customer Experience</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Smithsonian Institution</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>V- Office of Innovation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VPOTUS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>X- Office of the Chief Financial Officer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Z- Office of the Chief Acquisition Officer</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Industry</picklist>
+        <values>
+            <fullName>Agriculture</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Apparel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Banking</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Biotechnology</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chemicals</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Communications</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Construction</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Consulting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Education</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Electronics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Energy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Engineering</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Entertainment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Environmental</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Finance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Food %26 Beverage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Government</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Healthcare</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hospitality</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Insurance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Machinery</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manufacturing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Media</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not For Profit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Recreation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retail</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shipping</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Technology</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Telecommunications</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transportation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Utilities</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Ownership</picklist>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Private</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Public</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Subsidiary</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Rating</picklist>
+        <values>
+            <fullName>Cold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hot</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Warm</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type</picklist>
+        <values>
+            <fullName>Channel Partner %2F Reseller</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer - Channel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer - Direct</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Installation Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prospect</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Technology Partner</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

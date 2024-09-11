@@ -1,0 +1,12 @@
+{
+  "activeViewId" : "85a4d617-d50f-4ced-85f2-9ce360dd4911",
+  "appPageId" : "e6613a67-a332-4738-898e-c87d4d82ac01",
+  "configurationTags" : [ ],
+  "devName" : "State_Detail__c",
+  "id" : "2c489934-0ab5-455e-a003-9795ddef7ba9",
+  "label" : "State Detail",
+  "objectApiName" : "ECT_State__c",
+  "routeType" : "detail-a2o",
+  "type" : "route",
+  "urlPrefix" : "ect-state"
+}

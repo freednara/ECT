@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Check_I_Completed_Orientation_box</fullName>
+    <active>true</active>
+    <description>check the I Agree checkbox before saving record</description>
+    <errorConditionFormula>AND
+(
+RRS_I_Completed_Orientation__c = False,
+RecordType.Name = &apos;Researcher Contact&apos;,
+(ISPICKVAL(  RRS_Status__c ,&quot;Active&quot;))
+)</errorConditionFormula>
+    <errorDisplayField>RRS_I_Agree__c</errorDisplayField>
+    <errorMessage>Please ensure that the checkbox is checked.</errorMessage>
+</ValidationRule>
