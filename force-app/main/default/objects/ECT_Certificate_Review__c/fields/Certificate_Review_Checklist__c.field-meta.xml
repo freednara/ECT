@@ -7,7 +7,7 @@
     <relationshipLabel>Certificate Reviews</relationshipLabel>
     <relationshipName>Certificate_Reviews</relationshipName>
     <required>false</required>
-    <trackHistory>false</trackHistory>
+    <trackHistory>true</trackHistory>
     <trackTrending>false</trackTrending>
     <type>Lookup</type>
 </CustomField>

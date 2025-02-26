@@ -15,7 +15,7 @@
     <referenceTo>User</referenceTo>
     <relationshipName>Certificate_Reviews1</relationshipName>
     <required>false</required>
-    <trackHistory>false</trackHistory>
+    <trackHistory>true</trackHistory>
     <trackTrending>false</trackTrending>
     <type>Lookup</type>
 </CustomField>

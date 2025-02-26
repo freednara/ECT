@@ -163,7 +163,7 @@
     <nameField>
         <displayFormat>CR-{000000}</displayFormat>
         <label>Certificate Review</label>
-        <trackHistory>false</trackHistory>
+        <trackHistory>true</trackHistory>
         <type>AutoNumber</type>
     </nameField>
     <pluralLabel>Certificate Reviews</pluralLabel>

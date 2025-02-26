@@ -2,7 +2,7 @@
 <ListView xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Pre_Review_in_Progress</fullName>
     <columns>NAME</columns>
-    <columns>Contact_s_State__c</columns>
+    <columns>ECT_State__c</columns>
     <columns>Certificate_Type__c</columns>
     <columns>Date_Received__c</columns>
     <columns>Pre_Review_Assigned_To__c</columns>

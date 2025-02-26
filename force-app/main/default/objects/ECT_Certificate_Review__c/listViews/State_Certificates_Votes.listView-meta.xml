@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>State_Certificates_Votes</fullName>
+    <columns>State_Name__c</columns>
+    <columns>Assigned_To__c</columns>
+    <columns>NAME</columns>
+    <columns>Certificate_Type__c</columns>
+    <columns>Status__c</columns>
+    <columns>Date_Received__c</columns>
+    <columns>SM_Comments__c</columns>
+    <columns>SM_Date_Posted__c</columns>
+    <columns>WU_Date_Posted__c</columns>
+    <columns>Date_Website_Updated__c</columns>
+    <columns>WU_Reviewer__c</columns>
+    <columns>Review_Comments__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Certificate_Type__c</field>
+        <operation>equals</operation>
+        <value>Certificate of Vote</value>
+    </filters>
+    <filters>
+        <field>Status__c</field>
+        <operation>notEqual</operation>
+        <value>Completed</value>
+    </filters>
+    <label>State Certificates (Votes)</label>
+</ListView>

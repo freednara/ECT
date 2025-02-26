@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>States_NARA_contact_info</fullName>
+    <columns>NAME</columns>
+    <columns>CEO_Website__c</columns>
+    <columns>Location__c</columns>
+    <columns>Location_Address__Street__s</columns>
+    <columns>Location_Address__City__s</columns>
+    <columns>Location_Address__StateCode__s</columns>
+    <columns>Location_Address__PostalCode__s</columns>
+    <columns>Facebook__c</columns>
+    <columns>Instagram__c</columns>
+    <columns>LinkedIn__c</columns>
+    <columns>Twitter__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>NAME</field>
+        <operation>notEqual</operation>
+        <value>Congress</value>
+    </filters>
+    <label>States+NARA - contact info</label>
+</ListView>

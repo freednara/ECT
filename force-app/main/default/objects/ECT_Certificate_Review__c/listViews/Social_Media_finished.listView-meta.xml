@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Social_Media_finished</fullName>
+    <columns>State_Name__c</columns>
+    <columns>NAME</columns>
+    <columns>Certificate_Type__c</columns>
+    <columns>Status__c</columns>
+    <columns>Assigned_To__c</columns>
+    <columns>Date_Received__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Status__c</field>
+        <operation>equals</operation>
+        <value>Social Media</value>
+    </filters>
+    <filters>
+        <field>SM_Date_Posted__c</field>
+        <operation>lessOrEqual</operation>
+        <value>TODAY</value>
+    </filters>
+    <label>Social Media finished</label>
+</ListView>

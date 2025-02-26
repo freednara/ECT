@@ -30,7 +30,7 @@
             </value>
         </inputParameters>
         <nameSegment>emailSimple</nameSegment>
-        <versionSegment>1</versionSegment>
+        <offset>0</offset>
     </actionCalls>
     <actionCalls>
         <name>Notify_FL_Certificate_Not_Assigned</name>
@@ -59,7 +59,7 @@
             </value>
         </inputParameters>
         <nameSegment>emailSimple</nameSegment>
-        <versionSegment>1</versionSegment>
+        <offset>0</offset>
     </actionCalls>
     <actionCalls>
         <name>Notify_New_Assignee_of_Review_Assignment</name>
@@ -88,7 +88,7 @@
             </value>
         </inputParameters>
         <nameSegment>emailSimple</nameSegment>
-        <versionSegment>1</versionSegment>
+        <offset>0</offset>
     </actionCalls>
     <actionCalls>
         <name>Notify_Social_Media_Assignee_of_Review_Assignment</name>
@@ -120,7 +120,7 @@
             </value>
         </inputParameters>
         <nameSegment>emailSimple</nameSegment>
-        <versionSegment>1</versionSegment>
+        <offset>0</offset>
     </actionCalls>
     <actionCalls>
         <name>Notify_Social_Media_of_Review_Assignment</name>
@@ -155,7 +155,7 @@
             </value>
         </inputParameters>
         <nameSegment>emailSimple</nameSegment>
-        <versionSegment>1</versionSegment>
+        <offset>0</offset>
     </actionCalls>
     <actionCalls>
         <name>Notify_State_POC_of_Social_Media_Posting</name>
@@ -184,7 +184,7 @@
             </value>
         </inputParameters>
         <nameSegment>emailSimple</nameSegment>
-        <versionSegment>1</versionSegment>
+        <offset>0</offset>
     </actionCalls>
     <actionCalls>
         <name>Notify_State_POCs_that_Certificate_was_received_by_OFR</name>
@@ -213,7 +213,7 @@
             </value>
         </inputParameters>
         <nameSegment>emailSimple</nameSegment>
-        <versionSegment>1</versionSegment>
+        <offset>0</offset>
     </actionCalls>
     <actionCalls>
         <name>OFR_updated_Certificate_Comment</name>
@@ -242,7 +242,7 @@
             </value>
         </inputParameters>
         <nameSegment>emailSimple</nameSegment>
-        <versionSegment>1</versionSegment>
+        <offset>0</offset>
     </actionCalls>
     <apiVersion>60.0</apiVersion>
     <assignments>
@@ -364,12 +364,12 @@
         </rules>
         <rules>
             <name>Changed_Assigned_To</name>
-            <conditionLogic>and</conditionLogic>
+            <conditionLogic>((1 OR 3) AND 2) OR (1 AND 2 AND 3)</conditionLogic>
             <conditions>
-                <leftValueReference>$Record.Assigned_To__r.Id</leftValueReference>
-                <operator>NotEqualTo</operator>
+                <leftValueReference>$Record.Assigned_To__c</leftValueReference>
+                <operator>IsChanged</operator>
                 <rightValue>
-                    <elementReference>$Record__Prior.Assigned_To__r.Id</elementReference>
+                    <booleanValue>true</booleanValue>
                 </rightValue>
             </conditions>
             <conditions>
@@ -377,6 +377,13 @@
                 <operator>NotEqualTo</operator>
                 <rightValue>
                     <stringValue>NARA Social Media</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Status__c</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
                 </rightValue>
             </conditions>
             <connector>
@@ -386,7 +393,7 @@
         </rules>
         <rules>
             <name>Change_Assigned_To_Social_Media_User</name>
-            <conditionLogic>and</conditionLogic>
+            <conditionLogic>((2 OR 3) AND 1) OR (1 AND 2 AND 3)</conditionLogic>
             <conditions>
                 <leftValueReference>$Record.Assigned_To__r.ECT_User_Type__c</leftValueReference>
                 <operator>EqualTo</operator>
@@ -395,10 +402,17 @@
                 </rightValue>
             </conditions>
             <conditions>
-                <leftValueReference>$Record.Assigned_To__r.Id</leftValueReference>
-                <operator>NotEqualTo</operator>
+                <leftValueReference>$Record.Assigned_To__c</leftValueReference>
+                <operator>IsChanged</operator>
                 <rightValue>
-                    <elementReference>$Record__Prior.Assigned_To__r.Id</elementReference>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Status__c</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
                 </rightValue>
             </conditions>
             <connector>
@@ -609,7 +623,7 @@
     <textTemplates>
         <name>NotifySocialMedia</name>
         <isViewedAsPlainText>true</isViewedAsPlainText>
-        <text>This is an automated notification to inform you that {!$Record.Assigned_To__r.FirstName} {!$Record.Assigned_To__r.LastName} has been assigned to announce that the {!$Record.State__r.Name} {!$Record.Certificate_Type__c} is now available on www.archives.gov/electoral-college/results/{!CurrentYear}</text>
+        <text>This is an automated notification to inform you that {!$Record.Assigned_To__r.FirstName} {!$Record.Assigned_To__r.LastName} has been assigned to announce that the {!$Record.State__r.Name} {!$Record.Certificate_Type__c} is now available on www.archives.gov/electoral-college/{!CurrentYear}</text>
     </textTemplates>
     <textTemplates>
         <name>OFRupdatedComment</name>
@@ -619,7 +633,7 @@
     <textTemplates>
         <name>SocialMediaPostNotifyPOC</name>
         <isViewedAsPlainText>true</isViewedAsPlainText>
-        <text>This is an automated notification to inform you that the OFR posted your {!$Record.State__r.Name} {!$Record.Certificate_Type__c} to www.archives.gov/electoral-college/results/{!CurrentYear}</text>
+        <text>This is an automated notification to inform you that the OFR posted your {!$Record.State__r.Name} {!$Record.Certificate_Type__c} to www.archives.gov/electoral-college/{!CurrentYear}</text>
     </textTemplates>
     <textTemplates>
         <name>StatePOCNotificationforNewCertificateReview</name>
