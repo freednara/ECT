@@ -42,11 +42,7 @@
         <connector>
             <targetReference>Update_Account_ID_on_Contact</targetReference>
         </connector>
-        <filterLogic>and</filterLogic>
-        <filters>
-            <field>ECT_Contact_s_State__c</field>
-            <operator>IsChanged</operator>
-        </filters>
+        <filterFormula>AND(ISCHANGED({!$Record.ECT_Contact_s_State__c}),{!$Record.RecordType.DeveloperName}=&apos;ECT_Contact&apos;)</filterFormula>
         <object>Contact</object>
         <recordTriggerType>CreateAndUpdate</recordTriggerType>
         <triggerType>RecordBeforeSave</triggerType>

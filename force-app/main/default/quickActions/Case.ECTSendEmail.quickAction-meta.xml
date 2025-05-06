@@ -1,12 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <QuickAction xmlns="http://soap.sforce.com/2006/04/metadata">
     <fieldOverrides>
-        <field>ToIds</field>
-        <formula>Case.Contact.Id</formula>
+        <field>CcAddress</field>
+        <formula>&quot;fedreg.legal@nara.gov&quot;</formula>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>RelatedToId</field>
+        <formula>Case.Contact.ECT_Contact_s_State__c</formula>
     </fieldOverrides>
     <fieldOverrides>
         <field>ValidatedFromAddress</field>
-        <literalValue>ecrmecttest@gmail.com</literalValue>
+        <literalValue>ect@nara.gov</literalValue>
     </fieldOverrides>
     <optionsCreateFeedItem>true</optionsCreateFeedItem>
     <quickActionLayout>

@@ -3,12 +3,16 @@
     <allowInternalUserLogin>false</allowInternalUserLogin>
     <allowMembersToFlag>false</allowMembersToFlag>
     <changePasswordTemplate>unfiled$public/CommunityChangePasswordEmailTemplate</changePasswordTemplate>
-    <communityRoles/>
-    <disableReputationRecordConversations>true</disableReputationRecordConversations>
-    <emailSenderAddress>frank.reed@nara.gov</emailSenderAddress>
+    <communityRoles>
+        <customerUserRole>Customer</customerUserRole>
+        <employeeUserRole>Employee</employeeUserRole>
+        <partnerUserRole>Partner</partnerUserRole>
+    </communityRoles>
+    <disableReputationRecordConversations>false</disableReputationRecordConversations>
+    <emailSenderAddress>ecrm.help@nara.gov</emailSenderAddress>
     <emailSenderName>Electoral College Tracker (ECT)</emailSenderName>
-    <embeddedLoginEnabled>true</embeddedLoginEnabled>
-    <enableApexCDNCaching>true</enableApexCDNCaching>
+    <embeddedLoginEnabled>false</embeddedLoginEnabled>
+    <enableApexCDNCaching>false</enableApexCDNCaching>
     <enableCustomVFErrorPageOverrides>false</enableCustomVFErrorPageOverrides>
     <enableDirectMessages>true</enableDirectMessages>
     <enableExpFriendlyUrlsAsDefault>false</enableExpFriendlyUrlsAsDefault>
@@ -20,7 +24,7 @@
     <enableInvitation>false</enableInvitation>
     <enableKnowledgeable>false</enableKnowledgeable>
     <enableLWRExperienceConnectedApp>false</enableLWRExperienceConnectedApp>
-    <enableMemberVisibility>false</enableMemberVisibility>
+    <enableMemberVisibility>true</enableMemberVisibility>
     <enableNicknameDisplay>true</enableNicknameDisplay>
     <enablePrivateMessages>false</enablePrivateMessages>
     <enableReputation>false</enableReputation>
@@ -38,8 +42,6 @@
         <permissionSet>ECT_State_User</permissionSet>
         <permissionSet>ECT_Congress_User</permissionSet>
         <profile>admin</profile>
-        <profile>ect user</profile>
-        <profile>ect community profile</profile>
     </networkMemberGroups>
     <networkPageOverrides>
         <changePasswordPageOverrideSetting>Standard</changePasswordPageOverrideSetting>
@@ -50,7 +52,7 @@
     </networkPageOverrides>
     <picassoSite>Electoral_College_Tracker_ECT1</picassoSite>
     <selfRegistration>false</selfRegistration>
-    <sendWelcomeEmail>false</sendWelcomeEmail>
+    <sendWelcomeEmail>true</sendWelcomeEmail>
     <site>Electoral_College_Tracker_ECT</site>
     <siteArchiveStatus>NotArchived</siteArchiveStatus>
     <status>Live</status>

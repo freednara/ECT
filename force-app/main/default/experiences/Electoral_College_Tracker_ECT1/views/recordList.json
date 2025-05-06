@@ -1,34 +1,23 @@
 {
-  "appPageId" : "e6613a67-a332-4738-898e-c87d4d82ac01",
+  "appPageId" : "78a82165-c55a-498b-a989-c2dcfa02d45b",
   "componentName" : "siteforce:sldsOneColLayout",
   "dataProviders" : [ ],
-  "id" : "84196417-ed75-441d-ae4f-024689f65213",
+  "id" : "44026fc4-2bdd-4512-a7ab-4af6875d94b8",
   "label" : "Record List",
   "regions" : [ {
-    "components" : [ {
-      "componentAttributes" : {
-        "flowArguments" : "",
-        "flowName" : "ECT_Create_Shipping_Tracking_Information"
-      },
-      "componentName" : "forceCommunity:flowCommunity",
-      "id" : "6a3e82de-a1ff-48ed-b817-d64df058e0bf",
-      "renderPriority" : "NEUTRAL",
-      "renditionMap" : { },
-      "type" : "component"
-    } ],
-    "id" : "87f99826-91f0-4eee-aba6-24ba015d0903",
+    "id" : "45a18f00-e6ef-4cac-94e2-43c0316c933d",
     "regionName" : "header",
     "type" : "region"
   }, {
     "components" : [ {
       "componentAttributes" : {
         "enableInlineEdit" : true,
-        "filterName" : "{!filterId}",
+        "filterName" : "All",
         "layout" : "FULL",
         "pageSize" : 25,
-        "scope" : "{!objectName}",
+        "scope" : "ECT_Certificate_Review__c",
         "showActionBar" : false,
-        "showChartsPanel" : true,
+        "showChartsPanel" : false,
         "showDisplay" : "showall",
         "showFilterPanel" : true,
         "showImageIcon" : true,
@@ -38,16 +27,16 @@
         "showSearchBar" : true
       },
       "componentName" : "forceCommunity:objectHome",
-      "id" : "14ddc607-3cbb-49aa-b0d9-ff9ae5b81742",
+      "id" : "255f36c2-46d8-41aa-866c-c703fea6ce0b",
       "renderPriority" : "NEUTRAL",
       "renditionMap" : { },
       "type" : "component"
     } ],
-    "id" : "6d17b002-1c9a-428e-970c-1d5d3627bd7f",
+    "id" : "23d4f3e5-344e-467d-83f3-f80d91173697",
     "regionName" : "content",
     "type" : "region"
   }, {
-    "id" : "3d2f8d33-390e-4d2c-aa1e-ef11d98ec583",
+    "id" : "2da42cf0-14f8-4e2c-b06c-ea14579ae1c6",
     "regionName" : "footer",
     "type" : "region"
   } ],

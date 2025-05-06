@@ -1,9 +1,9 @@
 {
-  "activeViewId" : "25aedc3d-18f3-447f-90fb-7573eeccd4a5",
-  "appPageId" : "e6613a67-a332-4738-898e-c87d4d82ac01",
+  "activeViewId" : "6d63b840-9b81-4e21-8a5d-bd0d7053d09f",
+  "appPageId" : "78a82165-c55a-498b-a989-c2dcfa02d45b",
   "configurationTags" : [ ],
   "devName" : "Question_Detail",
-  "id" : "0cae4920-97fc-49a8-ba47-1154d076f0f3",
+  "id" : "da39baca-24f3-49a2-9548-eb17455769a8",
   "label" : "Question Detail",
   "routeType" : "feeditem",
   "type" : "route",

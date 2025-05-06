@@ -8,7 +8,9 @@
             <publicGroup>ECT_OFR_Legal_Users</publicGroup>
         </publicGroups>
         <users>
-            <user>frank.reed@nara.gov</user>
+            <user>ect.user@nara.gov</user>
+            <user>liza.davis@nara.gov</user>
+            <user>miriam.vincent@nara.gov</user>
         </users>
     </queueMembers>
     <queueSobject>

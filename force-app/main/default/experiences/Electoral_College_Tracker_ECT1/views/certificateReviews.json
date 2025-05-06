@@ -1,0 +1,61 @@
+{
+  "appPageId" : "78a82165-c55a-498b-a989-c2dcfa02d45b",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "dataProviders" : [ ],
+  "id" : "3aa93eb1-cf6c-46e2-bc7f-68fd1dbe8ca6",
+  "label" : "Certificate Reviews",
+  "regions" : [ {
+    "id" : "103affe0-ff11-41a0-bbe9-f48720841c30",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "enableInlineEdit" : true,
+        "filterName" : "All",
+        "layout" : "FULL",
+        "pageSize" : 25,
+        "scope" : "ECT_Certificate_Review__c",
+        "showActionBar" : false,
+        "showChartsPanel" : true,
+        "showDisplay" : "showall",
+        "showFilterPanel" : true,
+        "showImageIcon" : true,
+        "showManualRefreshButton" : true,
+        "showObjectName" : true,
+        "showPinnedList" : true,
+        "showSearchBar" : true
+      },
+      "componentName" : "forceCommunity:objectHome",
+      "id" : "c2490341-dcc8-4b34-bb66-a5510e87a89c",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "053b2b92-ae0d-4a5c-b083-a9bfa90a8506",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "c8b7954a-30cf-44cd-ba49-b527c63dc05f",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Certificate Reviews"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "c6d76de2-c640-47ce-bc78-3439fed7511d",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "faf51b78-7761-447c-a780-d10f419ff0ad",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "custom-certificate-reviews"
+}

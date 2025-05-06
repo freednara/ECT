@@ -15,11 +15,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Account.ECT_State_Seal__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
         <field>Account.ETMS_Salutation__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -131,16 +126,6 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>ECT_Certificate_Review__c.Certificate_Type__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>ECT_Certificate_Review__c.Certificate__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>ECT_Certificate_Review__c.Contact_s_State__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -356,11 +341,6 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>User.ECT_User_Type__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>User.UserContactAccount__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <hasActivationRequired>false</hasActivationRequired>

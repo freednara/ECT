@@ -1,0 +1,66 @@
+{
+  "appPageId" : "78a82165-c55a-498b-a989-c2dcfa02d45b",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "dataProviders" : [ ],
+  "id" : "1299990d-092d-4e04-b388-c3835070deb2",
+  "label" : "Shipping  Tracking Information Detail",
+  "regions" : [ {
+    "id" : "1c2d0d94-ee93-4bdd-a759-e0679c6c91e9",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "recordId" : "{!recordId}"
+      },
+      "componentName" : "forceCommunity:recordHeadline",
+      "id" : "1290ea95-e8c6-423d-a832-8acd0ab49ad6",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "detailsTabLabel" : "Details",
+        "discussionsTabLabel" : "Feed",
+        "recordId" : "{!recordId}",
+        "relatedTabLabel" : "Related",
+        "showLegacyActivityComposer" : false,
+        "tab1Type" : "details",
+        "tab2Type" : "related",
+        "tab3Type" : "chatter",
+        "tab4Type" : "none",
+        "timelineTabLabel" : "Activity"
+      },
+      "componentName" : "forceCommunity:recordHomeTabs",
+      "id" : "00a96c39-e098-4084-ad8c-645dc5f4bdf9",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "e2ccc52b-7d9d-416c-b8e6-a40700ac0e4e",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "8ca3a187-21dc-41c6-8499-216db9b9e21e",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "{!Record._Object}: {!Record._Title}"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "d21ea567-59c1-49ab-8028-1914ff43aee4",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "d1a29098-616d-4baa-a7c6-2a10edbb27e1",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "detail-a3p"
+}

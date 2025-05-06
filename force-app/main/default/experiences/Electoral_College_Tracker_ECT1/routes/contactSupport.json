@@ -1,9 +1,9 @@
 {
-  "activeViewId" : "9e9ca2dc-f441-4750-989b-9a101f621855",
-  "appPageId" : "e6613a67-a332-4738-898e-c87d4d82ac01",
+  "activeViewId" : "64626772-c97e-40fd-9685-0fc10d818012",
+  "appPageId" : "78a82165-c55a-498b-a989-c2dcfa02d45b",
   "configurationTags" : [ ],
   "devName" : "Contact_Support",
-  "id" : "50eab310-5676-42c4-8b16-203c20dcad37",
+  "id" : "930dd2e8-e2ab-4cb1-96ec-61a9bdb334b9",
   "label" : "Contact Support",
   "pageAccess" : "UseParent",
   "routeType" : "contactsupport",

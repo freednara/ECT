@@ -10,6 +10,11 @@
     <columns>Pre_Review_Start_Date__c</columns>
     <columns>Pre_Review_End_Date__c</columns>
     <filterScope>Everything</filterScope>
+    <filters>
+        <field>Certificate_Type__c</field>
+        <operation>equals</operation>
+        <value>Certificate of Ascertainment</value>
+    </filters>
     <label>All</label>
     <sharedTo>
         <group>ECT_NARA_Super_Users</group>

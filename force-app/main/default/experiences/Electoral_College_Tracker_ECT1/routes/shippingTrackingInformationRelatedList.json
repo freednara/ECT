@@ -1,0 +1,12 @@
+{
+  "activeViewId" : "033ed8cb-8ebe-4f40-bb4e-1e99d42dd740",
+  "appPageId" : "78a82165-c55a-498b-a989-c2dcfa02d45b",
+  "configurationTags" : [ ],
+  "devName" : "Shipping_Tracking_Information_Related_Li__c",
+  "id" : "84f25b4c-1ac0-4189-a963-036c08c723a9",
+  "label" : "Shipping  Tracking Information Related List",
+  "objectApiName" : "ECT_Shipping_Tracking_Information__c",
+  "routeType" : "relatedlist-a3p",
+  "type" : "route",
+  "urlPrefix" : "ect-shipping-tracking-information"
+}

@@ -1,17 +1,17 @@
 {
   "definitionName" : "service:branding-service",
-  "id" : "a917ffd9-293d-469c-9958-7c30d2a855ab",
+  "id" : "96fd2014-eef8-4b6e-bce2-6be561d637bb",
   "label" : "Customer Service",
   "type" : "brandingSet",
   "values" : {
     "ActionColor" : "#2574A9",
-    "BorderColor" : "#D4D4D4",
+    "BorderColor" : "rgb(212, 212, 212)",
     "CardBackgroundColor" : "rgba(255, 255, 255, 0)",
-    "CompanyLogo" : "/file-asset/ect_logo1?v=1",
+    "CompanyLogo" : "/file-asset/ofrlogo?v=1",
     "DetailTextColor" : "#696969",
     "ErrorFontColor" : "#ff9e9e",
     "HeaderFonts" : "Montserrat",
-    "HeaderImage" : "/file-asset/ect_logo1?v=1",
+    "HeaderImage" : "",
     "LinkColor" : "#2574A9",
     "LoginBackgroundColor" : "#F4F4F4",
     "LoginBackgroundImage" : "../../../../sfsites/picasso/core/external/salesforceIdentity/images/background.jpg?v=1",
@@ -48,7 +48,7 @@
     "_TextColor1" : "rgb(31, 31, 31)",
     "_TextColor2" : "rgb(0, 0, 0)",
     "_TextColor3" : "rgb(0, 0, 0)",
-    "_brandNavigationBarBackgroundColor" : "rgb(115,115,115)",
+    "_brandNavigationBarBackgroundColor" : "rgb(12, 12, 12)",
     "_brandNavigationItemBackgroundColorHover" : "rgba(0,0,0,.2)",
     "_brandNavigationItemDividerColor" : "rgba(255, 255, 255, 0.2)",
     "_desktopFontSizeLarge" : "1rem",
@@ -59,8 +59,8 @@
     "_desktopFontSizeXxLarge" : "1.75rem",
     "_desktopLineHeightText" : "1.5",
     "_desktopSquareIconMedium" : "2rem",
-    "brandNavigationBackgroundColor" : "rgb(128,128,128)",
-    "brandNavigationBarBackgroundColor" : "rgb(115,115,115)",
+    "brandNavigationBackgroundColor" : "rgb(128, 128, 128)",
+    "brandNavigationBarBackgroundColor" : "rgb(12, 12, 12)",
     "brandNavigationColorText" : "#FFFFFF"
   }
 }

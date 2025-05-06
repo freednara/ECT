@@ -1,0 +1,12 @@
+{
+  "activeViewId" : "3aa93eb1-cf6c-46e2-bc7f-68fd1dbe8ca6",
+  "appPageId" : "78a82165-c55a-498b-a989-c2dcfa02d45b",
+  "configurationTags" : [ ],
+  "devName" : "Certificate_Reviews__c",
+  "id" : "d39c8767-4f22-428a-8848-f9686164fb48",
+  "label" : "Certificate Reviews",
+  "pageAccess" : "UseParent",
+  "routeType" : "custom-certificate-reviews",
+  "type" : "route",
+  "urlPrefix" : "certificate-reviews"
+}

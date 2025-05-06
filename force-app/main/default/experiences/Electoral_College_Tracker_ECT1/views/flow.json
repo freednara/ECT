@@ -1,21 +1,21 @@
 {
-  "appPageId" : "e6613a67-a332-4738-898e-c87d4d82ac01",
+  "appPageId" : "78a82165-c55a-498b-a989-c2dcfa02d45b",
   "componentName" : "siteforce:sldsOneColLayout",
   "dataProviders" : [ ],
-  "id" : "6a305676-d0c5-40b4-96ad-5b24f802b1df",
+  "id" : "65a1204d-93cf-4029-bdf1-1d629961d272",
   "label" : "Flow",
   "regions" : [ {
-    "id" : "7ae3ef90-2cb5-4f28-b5bc-c32ea28cbb2e",
+    "id" : "41120a08-e1d4-4776-9d03-0407926283d5",
     "regionName" : "header",
     "type" : "region"
   }, {
     "components" : [ {
       "componentAttributes" : {
-        "flowArguments" : "[]",
-        "flowName" : "ECT_Upload_Certificate_for_Pre_Review_to_State"
+        "flowArguments" : "",
+        "flowName" : "{!flowName}"
       },
       "componentName" : "forceCommunity:flowCommunity",
-      "id" : "cb117c4d-67ad-4823-963a-b4f081eeacb6",
+      "id" : "c40cbcda-ef07-4695-9294-98f0a8b3d0b1",
       "renderPriority" : "NEUTRAL",
       "renditionMap" : { },
       "type" : "component"
@@ -32,21 +32,21 @@
         "showFilterPanel" : true,
         "showImageIcon" : true,
         "showManualRefreshButton" : true,
-        "showObjectName" : false,
-        "showPinnedList" : false,
+        "showObjectName" : true,
+        "showPinnedList" : true,
         "showSearchBar" : true
       },
       "componentName" : "forceCommunity:objectHome",
-      "id" : "f754beeb-f260-492f-b12f-5969ca30059a",
+      "id" : "2e4dbae7-a0e9-4a08-866f-94dd8c202dec",
       "renderPriority" : "NEUTRAL",
       "renditionMap" : { },
       "type" : "component"
     } ],
-    "id" : "9ca60767-475f-4641-a6c9-8675a6292dad",
+    "id" : "b8ddacf5-4f1c-44b5-b813-2be957593c50",
     "regionName" : "content",
     "type" : "region"
   }, {
-    "id" : "4d4b0a95-26ef-408b-a3dc-c33bd440f8f9",
+    "id" : "3a961407-fe81-47b6-81b2-f44e06fafb72",
     "regionName" : "footer",
     "type" : "region"
   } ],

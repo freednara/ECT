@@ -818,6 +818,7 @@
         <connector>
             <targetReference>Get_ECT_Inquiry_Type_Id</targetReference>
         </connector>
+        <filterFormula>{!$Record.RecordType.DeveloperName} = &apos;ECT_Inquiry&apos;</filterFormula>
         <object>Case</object>
         <recordTriggerType>CreateAndUpdate</recordTriggerType>
         <scheduledPaths>

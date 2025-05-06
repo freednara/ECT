@@ -1,0 +1,12 @@
+{
+  "activeViewId" : "83d24a10-6d86-4c7f-97d9-81e536565a4c",
+  "appPageId" : "78a82165-c55a-498b-a989-c2dcfa02d45b",
+  "configurationTags" : [ ],
+  "devName" : "Inquiry__c",
+  "id" : "6455cc8b-2914-427d-89f1-8fd2b3fc6fa5",
+  "label" : "Inquiry",
+  "pageAccess" : "UseParent",
+  "routeType" : "custom-inquiry",
+  "type" : "route",
+  "urlPrefix" : "inquiry"
+}

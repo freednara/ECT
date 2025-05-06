@@ -1,0 +1,72 @@
+{
+  "appPageId" : "78a82165-c55a-498b-a989-c2dcfa02d45b",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "dataProviders" : [ ],
+  "id" : "dda2223f-b7bb-46af-b6ad-9161931c89aa",
+  "label" : "Shipping and Tracking",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "flowArguments" : "",
+        "flowName" : "ECT_Create_Shipping_Tracking_Information"
+      },
+      "componentName" : "forceCommunity:flowCommunity",
+      "id" : "e7620f5e-afca-4778-b85c-903e47dabd0d",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "43a4fa03-b707-497d-8679-ae97c7a1b381",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "enableInlineEdit" : true,
+        "filterName" : "All",
+        "layout" : "FULL",
+        "pageSize" : 25,
+        "scope" : "ECT_Shipping_Tracking_Information__c",
+        "showActionBar" : false,
+        "showChartsPanel" : false,
+        "showDisplay" : "showall",
+        "showFilterPanel" : true,
+        "showImageIcon" : true,
+        "showManualRefreshButton" : true,
+        "showObjectName" : true,
+        "showPinnedList" : true,
+        "showSearchBar" : true
+      },
+      "componentName" : "forceCommunity:objectHome",
+      "id" : "14040972-7313-4dc3-b56a-bcf0d6409be0",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "b7535097-ae25-4581-8722-5e66fddaadb3",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "783a77eb-aa76-4037-b283-15d8104b0a7a",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Shipping and Tracking"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "81c52256-941d-4112-a8bb-3397042a47e0",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "d659fe70-0000-4c6c-8f24-6a60f3517b33",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "custom-shipping-and-tracking"
+}

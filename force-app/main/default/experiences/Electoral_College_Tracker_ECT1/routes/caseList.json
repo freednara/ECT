@@ -1,9 +1,9 @@
 {
-  "activeViewId" : "8c0c8744-f380-499f-9ca8-89f470c11400",
-  "appPageId" : "e6613a67-a332-4738-898e-c87d4d82ac01",
+  "activeViewId" : "6b1321d4-8b44-4768-808a-1b1d5a901b08",
+  "appPageId" : "78a82165-c55a-498b-a989-c2dcfa02d45b",
   "configurationTags" : [ ],
   "devName" : "Case_List",
-  "id" : "30fdfc58-4fd6-4c64-bb28-0e4dcae399d4",
+  "id" : "d8512951-d43b-480c-97cd-0a07c71eabc5",
   "label" : "Case List",
   "routeType" : "list-500",
   "type" : "route",

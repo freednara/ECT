@@ -1,0 +1,39 @@
+{
+  "appPageId" : "78a82165-c55a-498b-a989-c2dcfa02d45b",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "dataProviders" : [ ],
+  "id" : "033ed8cb-8ebe-4f40-bb4e-1e99d42dd740",
+  "label" : "Shipping  Tracking Information Related List",
+  "regions" : [ {
+    "id" : "80681904-a19f-41d2-b365-f913c7823a3f",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customTitle" : "",
+        "parentRecordId" : "{!recordId}",
+        "relatedListName" : "{!relationshipApiName}",
+        "showBreadCrumbs" : true,
+        "showCustomTitle" : false,
+        "showManualRefreshButton" : true,
+        "showRowNumbers" : true
+      },
+      "componentName" : "forceCommunity:relatedList",
+      "id" : "9e3a7dab-d102-46c5-8ed9-db77be487c21",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "0dd2a2f0-4521-460a-8aac-92e4506e0785",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "f86592d1-fb79-4924-80c1-d64206c9f2bb",
+    "regionName" : "footer",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "relatedlist-a3p"
+}

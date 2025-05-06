@@ -1,30 +1,30 @@
 {
-  "activeBrandingSetId" : "a917ffd9-293d-469c-9958-7c30d2a855ab",
+  "activeBrandingSetId" : "96fd2014-eef8-4b6e-bce2-6be561d637bb",
   "customCSS" : "",
   "developerName" : "service",
-  "id" : "6c104fba-1829-41c7-8ef2-88ee0c2edf8c",
+  "id" : "dcd3f787-611a-456a-a42c-9dae6ce3c91a",
   "label" : "Customer Service",
   "layouts" : {
-    "Inner" : "4e7cea4e-ddf9-410e-a041-e78ff61f5166",
-    "Login" : "71c5e4a5-bd4c-4139-9a9d-dcb251f5a91a",
-    "ServiceNotAvailable" : "abf4fca2-0945-446a-97f6-43929ead105e"
+    "Inner" : "8c0ae8a7-25a6-4b2c-81b9-0745a7ea32a9",
+    "Login" : "14d3fbc1-b56f-4b1c-8ff5-536c49c63162",
+    "ServiceNotAvailable" : "453d1fcb-ad94-441b-9a7d-c014950e215a"
   },
   "type" : "theme",
   "views" : [ {
     "componentAttributes" : { },
     "componentName" : "salesforceIdentity:loginBody2",
-    "id" : "71c5e4a5-bd4c-4139-9a9d-dcb251f5a91a",
+    "id" : "14d3fbc1-b56f-4b1c-8ff5-536c49c63162",
     "label" : "Login",
     "regions" : [ {
-      "id" : "a0050103-3b2e-4934-8477-0c095acb1be2",
+      "id" : "146b4470-abe7-4a76-8141-0dc5fe938691",
       "regionName" : "header",
       "type" : "region"
     }, {
-      "id" : "32649343-25d7-4621-b895-8c621dbcfdd6",
+      "id" : "c7764883-c2e7-4fe6-baf4-9ef5e48f74f2",
       "regionName" : "content",
       "type" : "region"
     }, {
-      "id" : "0fe18430-fe79-4ce6-9106-7cb2d22bebfb",
+      "id" : "4aeff04c-b407-4853-af94-2d616de9383d",
       "regionName" : "footer",
       "type" : "region"
     } ],
@@ -37,10 +37,10 @@
       "isPageWidthFixed" : true
     },
     "componentName" : "siteforce:serviceBody",
-    "id" : "4e7cea4e-ddf9-410e-a041-e78ff61f5166",
+    "id" : "8c0ae8a7-25a6-4b2c-81b9-0745a7ea32a9",
     "label" : "Default",
     "regions" : [ {
-      "id" : "0bbc78a0-cfec-4105-8773-8bef9f68cb3f",
+      "id" : "854d3d49-d3d7-4b4e-8ad7-6f087ef0d395",
       "regionName" : "customHeader",
       "type" : "region"
     }, {
@@ -49,6 +49,9 @@
           "contineActionLabel" : "Ask the community",
           "continueLabel" : "Don’t see it?",
           "crossObjectTypeaheadApiNames" : [ {
+            "isPublic" : true,
+            "name" : "KnowledgeArticleVersion"
+          }, {
             "isPublic" : true,
             "name" : "FeedItem"
           }, {
@@ -69,11 +72,11 @@
           "signInActionLabel" : "Sign in to ask the community"
         },
         "componentName" : "forceCommunity:searchBox",
-        "id" : "aae4d775-d59a-4f98-a8f9-5a7f6734190e",
+        "id" : "1a8f1895-ab5e-4c5b-b127-0c25fca4507a",
         "renditionMap" : { },
         "type" : "component"
       } ],
-      "id" : "42ebf626-e0fa-4a6d-881a-007e1a13ee54",
+      "id" : "579fd48e-03ba-4515-83e6-2c334321f26b",
       "regionName" : "search",
       "type" : "region"
     }, {
@@ -96,34 +99,49 @@
           "viewProfileLabel" : "My Profile"
         },
         "componentName" : "selfService:userProfileMenu",
-        "id" : "d9ceccad-5283-4b04-aef4-77e930468bc7",
+        "id" : "b6e8d3a6-6ad5-43e1-b543-6b0e8eb25552",
         "renditionMap" : { },
         "type" : "component"
       } ],
-      "id" : "7ff91938-fbc0-4c20-b04b-cbccfd57a8da",
+      "id" : "fa1b7e29-809f-40c0-b9d3-cb66dd013499",
       "regionName" : "profileMenu",
       "type" : "region"
     }, {
       "components" : [ {
         "componentAttributes" : {
-          "NavigationMenuEditorRefresh" : "Default_Navigation2",
+          "NavigationMenuEditorRefresh" : "Default_Navigation3",
           "hideAppLauncher" : true,
           "hideHomeText" : true
         },
         "componentName" : "forceCommunity:globalNavigation",
-        "id" : "1c58073f-4ee5-4d80-8561-859992f9c782",
+        "id" : "86117509-9adc-4b93-9508-f7cfbb149ae9",
         "renditionMap" : { },
         "type" : "component"
       } ],
-      "id" : "2459a754-0ee1-459d-9fd8-57e7bad4427c",
+      "id" : "ebe91d66-f693-4b89-a90f-bcc9fa3839b1",
       "regionName" : "navBar",
       "type" : "region"
     }, {
-      "id" : "6a57d489-9863-4f95-85b6-f47c45d6f4a3",
+      "components" : [ {
+        "componentAttributes" : {
+          "bannerText" : "",
+          "bannerTextWithKnowledge" : "Explore other <a href=\"javascript:void(0)\" class=\"headlineArticles\">articles</a> and <a href=\"javascript:void(0)\" class=\"headlineDiscussions\">discussions</a> on this topic.",
+          "bannerTextWithoutKnowledge" : "Explore other <a href=\"javascript:void(0)\" class=\"headlineDiscussions\">discussions</a> on this topic.",
+          "pageType" : "",
+          "showSubTopics" : true,
+          "title" : "Electoral College Tracker",
+          "uniqueNameOrId" : ""
+        },
+        "componentName" : "forceCommunity:headline",
+        "id" : "1b74fe26-6889-481c-b633-879f5b8833d5",
+        "renditionMap" : { },
+        "type" : "component"
+      } ],
+      "id" : "66c319b5-2ffb-4d4e-8093-9471cca36236",
       "regionName" : "customRegion",
       "type" : "region"
     }, {
-      "id" : "b0c2a447-8e4b-4c9c-8ac6-4f729c6848c2",
+      "id" : "ca79035e-bfcf-49e0-8d70-285922d521f1",
       "regionName" : "footer",
       "type" : "region"
     } ],
@@ -139,14 +157,14 @@
       "showHero" : true
     },
     "componentName" : "siteforce:themeLayoutStarter",
-    "id" : "abf4fca2-0945-446a-97f6-43929ead105e",
+    "id" : "453d1fcb-ad94-441b-9a7d-c014950e215a",
     "label" : "ServiceNotAvailable",
     "regions" : [ {
-      "id" : "18b3d7e8-94e5-469d-8668-4451d41d4ce4",
+      "id" : "da24a376-65a1-46f2-a2ab-ed348011652c",
       "regionName" : "themeHeader",
       "type" : "region"
     }, {
-      "id" : "82f482cd-fdbd-4865-bba7-f4418c00ecbb",
+      "id" : "768a714f-8912-44c3-b27e-e2c3fde02c26",
       "regionName" : "themeFooter",
       "type" : "region"
     } ],

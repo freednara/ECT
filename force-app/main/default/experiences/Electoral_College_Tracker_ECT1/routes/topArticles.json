@@ -1,12 +1,12 @@
 {
-  "activeViewId" : "aca2cf96-60cf-4204-8b88-67ea455e4ccb",
-  "appPageId" : "e6613a67-a332-4738-898e-c87d4d82ac01",
+  "activeViewId" : "a603ed97-dc28-4bf6-82d1-a617c50d6991",
+  "appPageId" : "78a82165-c55a-498b-a989-c2dcfa02d45b",
   "configurationTags" : [ ],
-  "devName" : "Top_Articles__c",
-  "id" : "9291032c-59b6-4f6d-bcae-e4fee6418580",
+  "devName" : "Top_Articles",
+  "id" : "558738ed-42bd-4f58-80ef-1c8e83bb0964",
   "label" : "Top Articles",
   "pageAccess" : "UseParent",
-  "routeType" : "custom-toparticles",
+  "routeType" : "top-articles",
   "type" : "route",
   "urlPrefix" : "toparticles"
 }

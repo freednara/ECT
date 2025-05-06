@@ -14,29 +14,44 @@
         <label>Certificate Pre-Reviews</label>
         <position>2</position>
         <publiclyAvailable>false</publiclyAvailable>
-        <target>/flow/ECT_Upload_Certificate_for_Pre_Review</target>
+        <target>/flow/ECT_Upload_Certificate_for_Pre_Review_to_State</target>
         <type>InternalLink</type>
     </navigationMenuItem>
     <navigationMenuItem>
+        <defaultListViewId>All</defaultListViewId>
         <label>Certificate Reviews</label>
         <position>3</position>
         <publiclyAvailable>false</publiclyAvailable>
-        <target>ECT_Certificate_Review__c</target>
-        <type>SalesforceObject</type>
+        <target>/certificate-reviews</target>
+        <type>InternalLink</type>
     </navigationMenuItem>
     <navigationMenuItem>
         <defaultListViewId>All</defaultListViewId>
         <label>Shipping &amp; Tracking</label>
         <position>4</position>
         <publiclyAvailable>false</publiclyAvailable>
-        <target>ECT_Shipping_Tracking_Information__c</target>
-        <type>SalesforceObject</type>
+        <target>/shipping-and-tracking</target>
+        <type>InternalLink</type>
     </navigationMenuItem>
     <navigationMenuItem>
         <label>Manage State Information</label>
         <position>5</position>
         <publiclyAvailable>false</publiclyAvailable>
-        <target>/manage-state-information</target>
+        <target>/manage-state</target>
+        <type>InternalLink</type>
+    </navigationMenuItem>
+    <navigationMenuItem>
+        <label>My Inquiries</label>
+        <position>6</position>
+        <publiclyAvailable>false</publiclyAvailable>
+        <target>/inquiry</target>
+        <type>InternalLink</type>
+    </navigationMenuItem>
+    <navigationMenuItem>
+        <label>Resources</label>
+        <position>7</position>
+        <publiclyAvailable>false</publiclyAvailable>
+        <target>/resources</target>
         <type>InternalLink</type>
     </navigationMenuItem>
 </NavigationMenu>

@@ -1,0 +1,12 @@
+{
+  "activeViewId" : "dda2223f-b7bb-46af-b6ad-9161931c89aa",
+  "appPageId" : "78a82165-c55a-498b-a989-c2dcfa02d45b",
+  "configurationTags" : [ ],
+  "devName" : "Shipping_and_Tracking__c",
+  "id" : "9cba464e-5f06-48e8-ac3c-7ab97f1ebd31",
+  "label" : "Shipping and Tracking",
+  "pageAccess" : "UseParent",
+  "routeType" : "custom-shipping-and-tracking",
+  "type" : "route",
+  "urlPrefix" : "shipping-and-tracking"
+}
